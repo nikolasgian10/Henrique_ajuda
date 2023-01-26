@@ -1,0 +1,29 @@
+.Navbar {
+  padding: 20px;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    gap: 40px;
+  }
+
+  img {
+    max-width: 200px;
+    height: auto;
+  }
+}
+
+.Sm_img {
+  max-width: 200px;
+  height: auto;
+}
+
+.Lg_img {
+  max-width: 250px;
+  height: auto;
+}

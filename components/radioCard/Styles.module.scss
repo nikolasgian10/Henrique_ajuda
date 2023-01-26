@@ -1,0 +1,257 @@
+// variables with colors from red to green with 2 steps for each
+$red-200: #FF0000;
+$red-300: #FF2A00;
+$red-400: #FF5500;
+
+$orange-200: #FF7F00;
+$orange-300: #FFA500;
+$orange-400: #FFBF00;
+
+$yellow-200: #FEDD00;
+$yellow-300: #FECB00;
+$yellow-400: #FEBE00;
+
+$green-200: #00FF00;
+$green-300: #00FF2A;
+$green-400: #00FF55;
+
+.Card {
+  background: rgba(221, 221, 221, 0.5);
+  margin-bottom: 20px !important;
+  padding: 20px;
+  border-radius: 5px;
+
+  input[type="number"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+  }
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fdfdfd;
+  color: #333;
+  padding: 20px;
+
+  p {
+    text-align: center;
+    max-width: 500px;
+    font-size: 19px;
+  }
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #333;
+
+  max-width: 500px;
+
+  & div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+    background-color: rgba($color: #000000, $alpha: 0.075);
+    border-radius: 5px;
+    margin: 10px auto;
+    font-size: 18px;
+
+    input[type="number"] {
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .radioGroup {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5px;
+      margin-top: 10px;
+
+      label {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+      }
+
+      input {
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.05);
+        padding: 5px;
+        border-radius: 5px;
+      }
+    }
+
+    input {
+      width: 100%;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+.Button {
+  width: 100%;
+  margin-top: 15px;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 50px;
+  margin-bottom: 10px;
+
+  // buttons shoud have a background color from red to green depending on the nth-child
+  background-color: nth-child(1) {
+    background-color: $red-200;
+  }
+
+}
+
+.Button:hover {
+  background-color: rgb(85, 150, 97);
+  color: #ffffff;
+}
+
+.RangeScale {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+
+  button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background: #c3d6dc;
+
+    &:hover {
+      background: #0095C8;
+    }
+  }
+}
+
+.PointsInputArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 10px;
+
+  button {
+    background-color: #007bff;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input {
+    margin: 0 !important;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+}
+
+.Score {
+  padding: 0 20px;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.PointsHeader {
+  width: 100%;
+  background-color: #fdfdfd;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  flex-direction: column;
+
+  p {
+    font-size: 12px;
+    color: rgb(230, 40, 40);
+    margin: 5px;
+  }
+}
+
+.RadioArea {
+  display: flex;
+}
+
+.RadioGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  margin: 10px auto !important;
+
+  label {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+
+  input {
+    margin: 5px;
+    cursor: pointer;
+  }
+}
+
+.CardFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 10px;
+  font-size: 12px;
+}

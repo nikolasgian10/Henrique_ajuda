@@ -1,0 +1,14 @@
+.Footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #0095C8;
+  gap: 20px;
+
+  img {
+    max-width: 150px;
+    height: auto;
+  }
+}
